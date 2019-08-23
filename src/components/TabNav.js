@@ -27,13 +27,13 @@ const createLabel = (iconName, labelText) => (
 
 const panes = [
     {
-      menuItem: <Menu.Item key='home' as={Nav} to={`/`} content={welcomeLabel} />
+      menuItem: <Menu.Item key='home' as={NavLink} to={`/`} content={welcomeLabel} />
     },
     {
       menuItem: (
         <Menu.Item
           key='characters'
-          as={Nav}
+          as={NavLink}
           to={`/characters`}
           content={characterLabel}
         />
@@ -43,7 +43,7 @@ const panes = [
       menuItem: (
         <Menu.Item
           key='locations'
-          as={Nav}
+          as={NavLink}
           to={`/locations`}
           content={locationLabel}
         />
@@ -53,7 +53,7 @@ const panes = [
       menuItem: (
         <Menu.Item
           key='episodes'
-          as={Nav}
+          as={NavLink}
           to={`/episodes`}
           content={episodesLabel}
         />
